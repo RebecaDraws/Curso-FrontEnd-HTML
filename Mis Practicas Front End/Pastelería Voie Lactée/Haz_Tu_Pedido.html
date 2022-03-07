@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css"> 
+    <title>Pastelería Voie Lactée</title>
+
+</head>
+
+<header class="encabezado">
+
+    <a href="./Pastelería_Home.html"><img src="Imagenes/Voie Lactée.png" alt="Voie Lactée" width="300px" height="300px"></a>
+    <nav>
+        <ul class="navegacionUl">
+            <li class="navegacionLi"><a href="Haz_Tu_Pedido.html" class="linksEncabezado">Haz tu pedido</a></li>
+            <li class="navegacionLi"><a href="Encuentranos.html" class="linksEncabezado">Encuentranos</a></li>
+            <li class="navegacionLi"><a href="Solo_Pasteleros.html" class="linksEncabezado">Solo pasteleros</a></li> 
+        </ul>
+    </nav>
+        
+</header>
+
+<h2>Selecciona tu sabor preferido</h2>
+
+<table>
+    <tr>
+        <td><img src="Imagenes\Asteroide de chocolate.jpeg" alt="Asteroide de Chocolate" width="250px" height="350px"></td>
+        <td><img src="Imagenes/Vía lactea.jpg" alt="Vía Lactea" width="350px" height="350px"></td>
+        <td><img src="Imagenes/Galaxia frutal.jpg" alt="Galaxia Frutal" width="250px" height="350px"></td>
+    </tr>
+    <tr>
+        <td class="nombresPasteles">Asteroide de Chocolate $650</td>
+        <td class="nombresPasteles">Vía Lactea $600</td>
+        <td class="nombresPasteles">Galaxia Frutal $550</td>
+    </tr>
+    <tr>
+        <td><ul>
+                <li>Chocolate</li>
+                <li>Nuez</li>
+                <li>Trozos de chocolate en la cubierta</li>
+            </ul>
+        </td>
+        <td><ul>
+                <li>Vainilla</li>
+                <li>Almendra</li>
+                <li>Cubierta de cajeta y frutos rojos</li>
+            </ul>
+        </td>
+        <td><ul>
+                <li>Fresas</li>
+                <li>Crema batida</li>
+                <li>Trozos de fresas</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<form action="/accion.js" id="form1" method="post"></form>
+
+    <h3>Nuestros sabores:</h3>
+    <table>
+        
+        <tr>
+            <td>Cantidad</td>
+            <td>Sabor</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="saborPredefinido1" name="saborPredefinido1" value="Asteroide de Chocolate"></td>
+            <td><label for="saborPredefinido1">Asteroide de Chocolate</label><br></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="saborPredefinido2" name="saborPredefinido2" value="Vía Lactea"></td>
+            <td><label for="saborPredefinido2">Vía Lactea</label><br></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="saborPredefinido3" name="saborPredefinido3" value="Galaxia Frutal"></td>
+            <td><label for="saborPredefinido3">Galaxia Frutal</label><br><br></td>
+        </tr>
+    
+    </table>
+
+<h2>Pasteles personalizados</h2>
+<p>El precio base del pastel es el del sabor, todos los sabores tienen un valor de $200 MXN cada uno, cada aditamento tendá un costo extra del precio base</p>
+
+<h3>Sabor</h3>
+    
+<input type="checkbox" id="Chocolate" name="Sabor1" value="Chocolate">
+<label for="Chocolate">Chocolate</label><br>
+<input type="checkbox" id="Vainilla" name="Sabor2" value="Vainilla">
+<label for="Vainilla">Vainilla</label><br>
+<input type="checkbox" id="Napolitano" name="Sabor3" value="Napolitano">
+<label for="Napolitano">Napolitano</label><br>
+<input type="checkbox" id="Fresa" name="Sabor4" value="Fresa">
+<label for="Fresa">Fresa</label><br>
+<input type="checkbox" id="Limon" name="Sabor5" value="Limon">
+<label for="Limon">Limón</label><br>
+<input type="checkbox" id="Frutas" name="Sabor6" value="Frutas">
+<label for="Frutas">Frutas</label><br>
+
+<h3>Relleno</h3>
+
+<input type="checkbox" id="chocolateTrozos" name="relleno1" value="chocolateTrozos">
+<label for="chocolateTrozos">Trozos de Chocolate $30</label><br>
+<input type="checkbox" id="chocolateDerretido" name="relleno2" value="chocolateDerretido">
+<label for="chocolateDerretido">Chocolate Derretido $30</label><br>
+<input type="checkbox" id="frutasTrozos" name="relleno3" value="frutasTrozos">
+<label for="frutasTrozos">Trozos de Fruta$30</label><br>
+<input type="checkbox" id="Nuez" name="relleno4" value="Nuez">
+<label for="Nuez"></label>Nuez $25<br>
+<input type="checkbox" id="Mermelada" name="relleno5" value="Mermelada">
+<label for="Mermelada">Mermelada $25</label><br>
+<input type="checkbox" id="Cajeta" name="relleno6" value="Cajeta">
+<label for="Cajeta">Cajeta $25</label><br>
+
+<h3>Cubierta</h3>
+
+<input type="radio" id="cubiertaChocolate" name="Cubierta" value="cubiertaChocolate">
+<label for="cubiertaChocolate">Chocolate $50</label><br>
+<input type="radio" id="cremaBatida" name="Cubierta" value="cremaBatida">
+<label for="cremaBatida">Crema Batida $50</label><br>
+<input type="radio" id="Dibujo" name="Cubierta" value="Dibujo">
+<label for="Dibujo">Dibujo $250</label><br>
+
+<h3>Decoración</h3>
+
+<input type="checkbox" id="decoChocolate" name="decoracion1" value="decoChocolate">
+<label for="decoChocolate">Trozos de Chocolate $30</label><br>
+<input type="checkbox" id="decoCremabatida" name="decoracion2" value="decoCremabatida">
+<label for="decoCremabatida">Crema Batida $30</label><br>
+<input type="checkbox" id="decoNuez" name="decoracion3" value="decoNuez">
+<label for="decoNuez">Nuez $30</label><br>
+<input type="checkbox" id="mensaje" name="decoracion4" value="mensaje">
+<label for="mensaje">Mensaje Grabado $15</label><br>
+<label for="descripcion"><h3>Descripción general del pastel:</h3></label>
+    <input type="text" id="descripcion" name=descripcion size="50" >
+    <br><br>
+    
+    <h3>Datos de entrega</h3>
+
+<label for="nombre">Nombre</label>
+    <br>
+    <input type="text" id="nombre" name=nombre>
+    <br><br>
+<label for="apellido">Apellido</label>
+    <br>
+    <input type="text" id="apellido" name=apellido>
+    <br><br>
+    <label for="correo1">Correo electrónico</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    <label for="tel1">Teléfono</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br>
+    <p>Fecha de entrega</p>
+    <input type="date" id="fecha1" name="fecha1"><br><br><br>
+
+    <input type="submit" value="Envíar">
+    <input type="Reset">  
+</form>
+
+<footer>
+    <h3>Contactanos</h3>
+    <p>
+        Teléfono:551556481545<br>
+        Correo electrónico: voielactee@gmail.com
+    </p>
+</footer>
+</body>
+</html>
